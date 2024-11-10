@@ -1,0 +1,549 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container style */
+.wrapper5 {
+  margin-left: 288px;
+  flex-grow: 1;
+  
+  padding: 20px;
+  height: 100%;
+  margin-top: -12px;
+  margin-right: -10px;
+}
+
+/* Header styles */
+.hospital-header {
+  margin-top: -55px;
+}
+
+.header-0-11{
+  background: linear-gradient(90deg,#718bc7 100%, #757eb9 0% );
+  height: 100px;
+  padding-top: 35px;
+  
+}
+
+.header-0-11 h1 {
+  font-size: 42px;
+  color: #ffffff;
+}
+
+.header-0-11 {
+  margin-top: 90px;
+  margin-left: -10px;
+  text-shadow: 2px 2px 4px rgba(224, 240, 246, 0.5);
+  width:1045px;
+ 
+ 
+}
+
+/* Icons section */
+
+.patients-icon{
+  margin-top: -120px;
+ 
+}
+.D-icons-14 {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  margin-top: -5%;
+  margin-right: 40px;
+}
+
+.icon-13 {
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: linear-gradient(90deg, #b2c8f8 0%, #bccbfd 100%);
+  padding: 3px;
+  margin-left: 30px;
+  height: 25px;
+  width: 25px;
+  margin-top: -5px;
+}
+
+/* New icon container styles */
+.icon-container4 {
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: rgb(5, 40, 71);
+  background: linear-gradient(90deg, #1e3c61 0%, #020f57 100%);
+  padding: 3px;
+  height: 50px;
+  width: 80px;
+  margin-left: 60px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.patients-icon-up{
+  margin-top: 5px;
+}
+
+.pa-h1{
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.icon4 {
+  align-items: center;
+  color: white;
+  margin-top: 4px;
+  margin-left: -2px;
+  width: 30px;
+}
+
+/* Hover effects */
+.icon-13:hover {
+  color: #115b6b;
+}
+
+.icon-container4:hover {
+  background: linear-gradient(90deg, #297e55 0%, #0b632e 100%); /* Lighter gradient on hover */
+}
+
+/* Content styles */
+.content1 {
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.icon-section1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.hospital-header-text-up{
+  margin-top: -70px;
+  margin-left: -16px;
+}
+
+
+/* Table styles */
+/*
+.patients-table-wrapper {
+  margin: 20px;
+  
+}
+
+.patients-table-container {
+  max-height: 400px; 
+  overflow-y: auto; 
+  margin-top: 20px;
+  margin-left: 25px;
+  background: linear-gradient(135deg, #0a3d4b, #02162e); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.table-th{
+  background-color: midnightblue;
+  color: white;
+}
+
+th{
+  color: white;
+}
+
+.patients-table {
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+
+
+.patients-table th,
+.patients-table td {
+  padding: 12px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+
+}
+
+.patients-table th {
+  position: sticky;
+  top: 0;
+  font-size: 16px;
+}
+
+.patients-table td {
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  font-size: 14px;
+}
+
+.patients-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.pati-table{
+  margin-left: -120px;
+  width: 114%;
+}
+
+.icon-trash{
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+  border-color: #000;
+  margin-left: 35%;
+}
+*/
+/* Responsive styles */
+@media (max-width: 768px) {
+  .patients-table {
+    display: block;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+
+  
+  .D-icons-14 {
+    right: 10px;
+    margin-right: -10px;
+    margin-top: 10px;
+  }
+
+  .patients-table th,
+  .patients-table td {
+    display: block;
+    width: 100%; /* Full width for better readability */
+    box-sizing: border-box;
+    text-align: center; /* Center text for mobile view */
+  }
+
+  .patients-table th {
+    text-align: left; /* Align headers to the left */
+    position: relative;
+  }
+
+  .patients-table tr {
+    margin-bottom: 15px; /* Add space between rows */
+    border: none; /* Remove border for mobile view */
+  }
+
+  /* Adjust header and cell styles for better readability */
+  .patients-table th {
+    background-color: #f4f4f4;
+    font-weight: bold; /* Bold font for headers */
+    padding: 10px; /* Reduced padding for compact view */
+  }
+
+  .patients-table td {
+    padding: 10px; /* Reduced padding for compact view */
+  }
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .wrapper5 {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .header-0-11 h1 {
+    margin-top: -50px;
+    margin-left: 50px;
+  }
+
+  .D-icons-14 {
+    right: 10px;
+    margin-right: -10px;
+    margin-top: -25px;
+  }
+
+  .icon-13 {
+    margin-top: -50px;
+  }
+
+  .icon-section1 {
+    flex-direction: column; /* Stack icon containers vertically on smaller screens */
+  }
+
+  .icon-container4 {
+    margin-left: 21px;
+  }
+
+  .icon-container {
+    width: 100%; /* Full width for icon containers */
+    margin-left: 0; /* Reset left margin */
+    margin-right: 0; /* Reset right margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper5 {
+    margin-left: 0;
+    padding: 5px;
+  }
+
+  .D-icons-3 {
+    right: 5px;
+  }
+
+  .icon-container {
+    width: 100%;
+  }
+
+  /* Adjust table cell padding for smaller screens */
+  .patients-table th,
+  .patients-table td {
+    padding: 8px;
+  }
+
+  /* Adjust font sizes for smaller screens */
+  .header-0-11 h1 {
+    font-size: 28px;
+  }
+}
+
+/*table up*/
+
+/* Variables for hospital theme colors */
+:root {
+  --hospital-primary: #0a0a0a;    /* Medical blue */
+  --hospital-secondary: rgb(221, 230, 235);  /* Surgical green */
+  --hospital-light: #95c1db;     /* Light blue background */
+  --hospital-hover: #eef4f5;     /* Hover state */
+  --hospital-border: #bee3f8;    /* Border color */
+  --hospital-error: #f56565;     /* Error red */
+  --hospital-text: #000000;      /* Dark text */
+  --hospital-text-light: #0a0a0a; /* Secondary text */
+}
+
+/* Container styles */
+.pati-table {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(43, 108, 176, 0.1);
+  overflow-x: auto;
+  margin: 1rem;
+}
+
+/* Error message styling */
+.error-message {
+  padding: 1rem;
+  background-color: #fff5f5;
+  border-left: 4px solid var(--hospital-error);
+  color: #fc0000;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* Table base styles */
+.patients-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Header styles */
+.patients-table thead {
+  background-color: var(--hospital-light);
+}
+
+.table-th th {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--hospital-primary);
+  border-bottom: 2px solid var(--hospital-border);
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  position: relative;
+  border-radius: 5px;
+  border: #000000;
+  box-shadow: 3px 3px #167ef5;
+}
+
+.table-th th::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--hospital-primary);
+  transition: width 0.3s ease;
+}
+
+.table-th th:hover::after {
+  width: 100%;
+}
+
+/* Table body styles */
+.patients-table tbody tr {
+  transition: all 0.3s ease-in-out;
+}
+
+.patients-table tbody tr:hover {
+  background-color: var(--hospital-hover);
+  transform: translateY(-1px);
+}
+
+.patients-table tbody td {
+  padding: 1.25rem 1rem;
+  color: var(--hospital-text-light);
+  border-bottom: 1px solid var(--hospital-border);
+  font-size: 0.95rem;
+}
+
+/* Alternating row colors */
+.patients-table tbody tr:nth-child(even) {
+  background-color: #fafcff;
+}
+
+/* Delete icon styles */
+.icon-trash {
+  color: var(--hospital-error);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: rgb(212, 53, 53);
+  font-size: 20px;
+}
+
+.icon-trash:hover {
+  color: #ff0000;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Status indicators - if you want to add status columns */
+.status-pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+}
+
+.status-active {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status-inactive {
+  background-color: #fed7d7;
+  color: #822727;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .pati-table {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+  }
+  
+  .patients-table thead {
+    display: none;
+  }
+  
+  .patients-table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid var(--hospital-border);
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .patients-table tbody td {
+    display: block;
+    text-align: right;
+    padding: 0.75rem 1rem;
+    position: relative;
+  }
+  
+  .patients-table tbody td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+    color: var(--hospital-primary);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  
+  .patients-table tbody td:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseHighlight {
+  0% {
+    background-color: var(--hospital-hover);
+  }
+  50% {
+    background-color: var(--hospital-light);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* Animation classes */
+.patients-table tbody tr {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.row-highlight {
+  animation: pulseHighlight 1.5s ease-in-out;
+}
+
+/* Print styles */
+@media print {
+  .pati-table {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .icon-trash {
+    display: none;
+  }
+  
+  .patients-table th,
+  .patients-table td {
+    padding: 0.5rem;
+  }
+  
+  .patients-table {
+    border: 1px solid #e2e8f0;
+  }
+}

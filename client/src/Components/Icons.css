@@ -1,0 +1,78 @@
+.D-icons {
+    position: fixed;
+    margin-bottom: 50px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+    
+}
+
+.D-icons .icons1 {
+    margin-left: 10px;
+}
+
+.icons1, .icons2 {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    background: linear-gradient(30deg, #087178ac 0%, #095185cc 100%);
+    -webkit-box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+    -moz-box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+    box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 3px;
+    transition: transform 0.3s ease;
+}
+
+
+.icons2 {
+    margin-left: 10px;
+}
+
+.icons1:hover,
+.icons2:hover {
+    color: #000000;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .D-icons {
+        right: 10px;
+        margin-top: 80px;
+        margin-right: 50px;
+        color: black;
+    }
+
+    .icons1, .icons2 {
+        font-size: 24px;
+        margin-right: 20px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .D-icons {
+        right: 5px;
+        margin-bottom: -40px;
+    }
+
+    .icons1, .icons2 {
+        font-size: 20px;
+        margin-right: 15px;
+        padding: 2px;
+    }
+}

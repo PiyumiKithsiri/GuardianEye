@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.toggle-btn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  z-index: 2;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(90deg, #757eb9 0%, #718bc7 100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.sidebar.responsive_nav {
+  transform: translateX(0);
+  height: 100%;
+}
+
+.wrapper.open .sidebar {
+  transform: translateX(0);
+  height: 100%;
+}
+
+.sidebar .image-text {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: -40px;
+}
+
+.sidebar .image {
+  width: 60px;
+  height: 300px;
+  margin-right: 10px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar-input {
+  width: 80%;
+  margin-left: 30px;
+}
+
+.sidebar-input .sidebar-input-text input {
+  width: 200%;
+  height: 40px;
+  margin-top: 100px;
+  margin-left: -120px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  background: rgb(57, 99, 135);
+  background: linear-gradient(90deg, #4e6ca9 0%, #2d6378 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-input .search::placeholder {
+  color: #ffffff; /* Change this to your desired placeholder color */
+  opacity: 1; /* Make sure the placeholder is fully opaque */
+  font-size: bold ;
+}
+
+.sidebar .menu-bar {
+  padding: 20px;
+  margin-top: -175px;
+}
+
+.sidebar .menu-bar .main-p {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.sidebar .menu-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .menu-links .nav-link {
+  margin-bottom: 5px;
+}
+
+.sidebar .menu-links .nav-link a {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  width: 100%;
+  background: rgb(18, 51, 79);
+  background: linear-gradient(90deg, #475f90 0%, #14556f 100%);
+}
+
+/* Optional: Change color on hover */
+.sidebar .menu-links .nav-link a:hover {
+  background-color: #ffffff; /* Change this to your desired hover background color */
+  color: #000; /* Change this to your desired hover text color */
+}
+.sidebar .menu-links .nav-link .icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.icon {
+  margin-top: 5%;
+}
+
+.nav-link {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: rgb(202, 221, 248);
+  border: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    transform: translateX(-100%);
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .sidebar-input .sidebar-input-text input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .sidebar-input .sidebar-input-text{
+    margin-top: 10px;
+
+  }
+
+  .menu{
+    margin-top: -100px;
+    padding-top: -100px;
+  }
+
+  .main-p{
+    margin-top: -100px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+
+  .image{
+    margin-left: -150px;
+  }
+  .sidebar {
+    width: 200px;
+    height: 100%;
+  }
+
+  .sidebar .image-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar .image {
+    margin-bottom: 10px;
+  }
+
+  .sidebar-input .sidebar-input-text input {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .sidebar-input .sidebar-input-text{
+    margin-top: 1px;
+    padding-top: 30px;
+    margin-left: -20px;
+  }
+  .menu ul{
+    margin-top: 80px;
+  }
+  .menu .main-p{
+    margin-top: 30px;
+  }
+}

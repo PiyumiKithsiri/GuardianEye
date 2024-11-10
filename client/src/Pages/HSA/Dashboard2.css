@@ -1,0 +1,241 @@
+Reset default margin and padding
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container style */
+.wrapper4 {
+  margin-left: 288px;
+  flex-grow: 1;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  min-height: 740px;
+ 
+}
+
+/* Header styles */
+.hospital-header {
+  margin-bottom: -20px;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  height: 90px;
+  width: 220%;
+  background: linear-gradient(90deg,#718bc7 100%, #757eb9 0% );
+  padding: 10px;
+  margin-left: -80px;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: white;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  text-shadow: 2px 2px 4px rgba(224, 240, 246, 0.5);
+}
+
+/* Content styles */
+.icon-section7 {
+  display: flex;
+  margin-top: 30px;
+  margin-left: -12px;
+  flex-wrap: wrap; 
+}
+
+
+.icon-container0 {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  width: 250px;
+  height: 180px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: -7px 5px 23px -4px rgba(0, 0, 0, 0.67);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 1px;
+}
+
+.pat-icon{
+  margin-left: -10px;
+}
+
+.da-up{
+  margin-top: 90px;
+}
+
+.da-h1{
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.add-icon{
+  margin-left: 550px;
+  margin-top: -5px;
+}
+.icon7 {
+  font-size: 30px;
+  margin-right: -20px;
+  margin-top: -130px;
+  height: 40px;
+  color: white;
+}
+
+.icon7:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Ensures text-10 color is white */
+.text-10 {
+  color: #fff;
+  margin-left: -105px;
+  margin-top: 130px;
+  align-items: center;
+}
+
+.text-10-1 {
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  margin-left: 60px;
+}
+
+.text-10:hover {
+  color: white;
+}
+
+.icon-container0:hover {
+  background-color: #d9d9d9;
+  transform: scale(1.05);
+}
+
+/* Pie Chart styles */
+.p_chart {
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  background: white;
+  box-shadow: -7px 5px 23px -4px rgba(0, 0, 0, 0.67);
+  border-radius: 10px;
+  height: 290px;
+  margin-left: 1.75%;
+  margin-top: -16.5%;
+  position: fixed;
+}
+
+.p_chart:hover {
+  background-color: white; 
+  transform: scale(1.05); 
+  box-shadow: 0 100px 40px rgba(0, 0, 0, 0.3); 
+  color: rgb(255, 255, 255);
+}
+
+.pie-chart-dash{
+  margin-top: 10px;
+  margin-left: 20px;  
+}
+
+.view-dash{
+  margin-top: -220px;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .wrapper4 {
+    margin-left: 0;
+    padding: 10px;
+    position: relative; /* Position it relative to avoid fixed positioning issues on mobile */
+    min-height: auto;
+  }
+
+  .header {
+    width: 120%; 
+    margin-left: 0;
+    height: 90px;
+    padding: 5px;
+    flex-direction: column; 
+    text-align: center;
+    margin-left: -30px;
+    margin-bottom: -20px;
+  }
+
+  .header h1 {
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 50%;
+  }
+
+  .icon-section7 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .icon-container0 {
+    width: 40%; /* Full width on mobile */
+    margin: 10px 0;
+    height: auto;
+    margin-left: -55%;
+    margin-top: 60px;
+  }
+
+  .icon7 {
+    font-size: 24px;
+    margin-top: -50px;
+  }
+
+  .text-10 {
+    font-size: 18px;
+    margin-top: 70px;
+    margin-left: -90px;
+    text-align: center;
+  }
+
+  .text-10-1 {
+    font-size: 60px;
+    margin-left: 70px;
+    margin-top: -40px;
+  }
+
+  .p_chart {
+    width: 80%;
+    height: 300px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper4 {
+    padding: 5px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .icon7 {
+    font-size: 20px;
+  }
+
+  .text-10 {
+    margin-top: 100px;
+  }
+
+  .text-10-1 {
+    font-size: 50px;
+  }
+}

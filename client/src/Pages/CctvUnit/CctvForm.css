@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.cctv-right-bar {
+  flex-grow: 1;
+ background-color: white;
+  padding: 20px;
+  margin-left: 285px;
+  margin-top: -20px;
+  height: auto;
+  width: auto;
+}
+
+.cc-form-up{
+  background: linear-gradient(90deg,#718bc7 100%, #757eb9 0% );
+  height: 100px;
+  width: 105.5%;
+  margin-left: -17px;
+  margin-top: -18px;
+}
+
+.cc-form-text{
+  margin-top: 20px;
+}
+
+.header-3 h1 {
+  color: white;
+  font-size: 42px;
+  position: relative;
+  margin-top: -13px;
+  padding: 10px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+ 
+  z-index: 1;
+}
+
+.D-icons-1 {
+  position: absolute;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  margin-top: -88px;
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+}
+
+.icon-1 {
+  font-size: 30px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    margin-right: 30px;
+
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    background: linear-gradient(30deg, #087178ac 0%, #095185cc 100%);
+    -webkit-box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+    -moz-box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+    box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+   
+    margin-left: 3px;
+    transition: transform 0.3s ease;
+}
+
+.icon-1:hover {
+  color: #000000;
+    transform: scale(1.05);
+}
+
+.h2-2 {
+  color: #495155;
+  font-size: 22px;
+  margin-left: 40px;
+  padding-top: 100px;
+  margin-top: -90px;
+}
+
+.table-container {
+  padding: 20px;
+}
+/*
+.notification-table {
+  width: 95%;
+  border-collapse: collapse;
+  margin-left: 50px;
+}
+
+.notification-table th, 
+.notification-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.notification-table th {
+  background-color: #b36af7;
+}
+*/
+.hr-1{
+  border-bottom-style: none;
+  border: 1px solid red;
+}
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .cctv-right-bar {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .header-3 h1 {
+    font-size: 26px;
+    margin-left: 50px;
+  }
+
+  .D-icons-1 {
+    right: 50px;
+    margin-top: -70px;
+    margin-left: -10px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-3 h1 {
+    font-size: 24px;
+    margin-left: 40px;
+  }
+
+  .D-icons-1 {
+    right: 20px;
+    margin-right: 40px;
+    margin-top: -75px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cctv-right-bar {
+    margin-left: 0;
+    padding: 5px;
+  }
+
+  .header-3 h1 {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  .D-icons-1 {
+    right: 5px;
+    margin-right: 30px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+}
+/*
+.table-container {
+  padding: 20px;
+  overflow-x: auto;
+}
+*/
+/* Responsive styles */
+@media (max-width: 768px) {
+  .notification-table {
+      display: block;  /* Makes table block-level for scrolling */
+      overflow-x: auto; /* Allows horizontal scrolling */
+      white-space: nowrap; /* Prevents wrapping of text */
+  }
+
+  .notification-table th, 
+  .notification-table td {
+      display: inline-block; /* Change cells to inline-block */
+      width: auto; /* Allow automatic width */
+      box-sizing: border-box; /* Include padding and border in width */
+  }
+}
+
+.send-button {
+  margin-top: 20px;
+}
+
+/*table up*/
+
+/* Variables for hospital theme colors */
+:root {
+  --hospital-primary: #0a0a0a;    /* Medical blue */
+  --hospital-secondary: rgb(221, 230, 235);  /* Surgical green */
+  --hospital-light: #95c1db;     /* Light blue background */
+  --hospital-hover: #eef4f5;     /* Hover state */
+  --hospital-border: #bee3f8;    /* Border color */
+  --hospital-error: #f56565;     /* Error red */
+  --hospital-text: #000000;      /* Dark text */
+  --hospital-text-light: #0a0a0a; /* Secondary text */
+}
+
+/* Container styles */
+.pati-table {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(43, 108, 176, 0.1);
+  overflow-x: auto;
+  margin: 1rem;
+}
+
+/* Error message styling */
+.error-message {
+  padding: 1rem;
+  background-color: #fff5f5;
+  border-left: 4px solid var(--hospital-error);
+  color: #fc0000;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* Table base styles */
+.notification-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Header styles */
+.notification-table thead {
+  background-color: var(--hospital-light);
+}
+
+.table-th th {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--hospital-primary);
+  border-bottom: 2px solid var(--hospital-border);
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  position: relative;
+  border-radius: 5px;
+  border: #000000;
+  box-shadow: 3px 3px #167ef5;
+}
+
+.table-th th::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--hospital-primary);
+  transition: width 0.3s ease;
+}
+
+.table-th th:hover::after {
+  width: 100%;
+}
+
+/* Table body styles */
+.notification-table tbody tr {
+  transition: all 0.3s ease-in-out;
+}
+
+.notification-table tbody tr:hover {
+  background-color: var(--hospital-hover);
+  transform: translateY(-1px);
+}
+
+.notification-table tbody td {
+  padding: 1.25rem 1rem;
+  color: var(--hospital-text-light);
+  border-bottom: 1px solid var(--hospital-border);
+  font-size: 0.95rem;
+}
+
+/* Alternating row colors */
+.notification-table tbody tr:nth-child(even) {
+  background-color: #fafcff;
+}
+
+
+/* Status indicators - if you want to add status columns */
+.status-pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+}
+
+.status-active {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status-inactive {
+  background-color: #fed7d7;
+  color: #822727;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .pati-table {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+  }
+  
+  .notification-table thead {
+    display: none;
+  }
+  
+  .notification-table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid var(--hospital-border);
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .notification-table tbody td {
+    display: block;
+    text-align: right;
+    padding: 0.75rem 1rem;
+    position: relative;
+  }
+  
+  .notification-table tbody td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+    color: var(--hospital-primary);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  
+  .notification-table tbody td:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseHighlight {
+  0% {
+    background-color: var(--hospital-hover);
+  }
+  50% {
+    background-color: var(--hospital-light);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* Animation classes */
+.notification-table tbody tr {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.row-highlight {
+  animation: pulseHighlight 1.5s ease-in-out;
+}
+
+/* Print styles */
+@media print {
+  .pati-table {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .icon-trash {
+    display: none;
+  }
+  
+  .notification-table th,
+  .notification-table td {
+    padding: 0.5rem;
+  }
+  
+  .notification-table {
+    border: 1px solid #e2e8f0;
+  }
+}

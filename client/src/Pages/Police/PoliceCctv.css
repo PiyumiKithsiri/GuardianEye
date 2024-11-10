@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.right-bar-2 {
+  flex-grow: 1;
+ 
+  padding: 20px;
+  margin-left: 288px;
+  margin-top: -20px;
+}
+
+h1 {
+  color: white;
+  position: relative;
+  padding: 10px;
+  margin-top: -35px;
+  font-size: 42px;
+  z-index: 1;
+}
+
+.D-icons-2 {
+  position: absolute;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  margin-top: -60px;
+  margin-right: 180px;
+}
+
+ .pol-icon  {
+  margin-left: 40px;
+ justify-content: right;
+}
+
+.icon-3 {
+  font-size: 30px; 
+  padding-top: 10px; /* Increased size */
+}
+
+.icon-2:hover {
+  color: #000000;
+    transform: scale(1.05);
+ 
+}
+
+
+.D-icons-2 .icon-2 {
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+ /* margin: 20px;*/
+ 
+  text-align: center;
+  background: linear-gradient(30deg, #087178ac 0%, #095185cc 100%);
+  -webkit-box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+  -moz-box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+  box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 3px;
+  transition: transform 0.3s ease;
+}
+
+.D-icons-2 .icon-2:last-child {
+  margin-right: 0;
+}
+
+.header-2 {
+  margin: 20px 0 0 30px;
+  text-shadow: 2px 2px 4px rgba(224, 240, 246, 0.5);
+}
+
+.h2-4 {
+  color: #656768;
+  font-size: 22px;
+  margin-left: 10px;
+  margin-top: -80px;
+}
+
+
+.polive-cctv-up{
+  background: linear-gradient(90deg,#718bc7 100%, #757eb9 0% );
+  height: 100px;
+  width: 105.5%;
+  margin-left: -20px;
+  margin-top: -19px;
+}
+
+.police-cc-icon{
+  margin-top: 20px;
+}
+
+.hr-2{
+  border: 3px;
+  border-top: 1px solid rgb(111, 167, 252);
+  
+}
+  
+.content-2 {
+  margin-top: 100px;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 300px 20px 150px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  background: rgb(57, 99, 135);
+  background: linear-gradient(90deg, #4e6ca9 0%, #2d6378 100%);
+  padding: 10px;
+  border-radius: 8px;
+  width: 30%;
+  height: 50px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-right: -70px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-container:hover {
+  background-color: #eff2f3;
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  color: rgb(247, 248, 249);
+  transition: color 0.3s ease;
+
+}
+
+.icon-container:hover .icon {
+  color: rgb(13, 13, 13);
+}
+
+.icon-container span {
+  color: rgb(252, 253, 254);
+  transition: color 0.3s ease;
+}
+
+.icon-container:hover span {
+  color: rgb(10, 11, 11);
+}
+
+.notification-cards-2 .card,
+.card {
+  height: 170px;
+  background-color:#08aafc;
+  width: 30%;
+  height: 150px;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: #212fee 5px 5px;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+
+.card p{
+  color: black;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.main-card {
+  display: flex;
+ 
+}
+
+.main-card .forward-btn {
+  font-size: 40px;
+  margin-left: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  transition: background-color 0.3s ease;
+  font-weight: normal;
+}
+
+.forward-btn:hover {
+  background: rgb(57, 99, 135);
+  background: linear-gradient(90deg, #4e6ca9 0%, #2d6378 100%);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forward-btn:hover .forward {
+  color: #bd2929;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .right-bar-2 {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin: -10px 0 20px 10px;
+  }
+
+  .D-icons-2 {
+    right: 10px;
+    margin-top: -68px;
+  }
+
+  .icon-2 {
+    font-size: 25px;  /* Adjusted size for smaller screens */
+    width: 28px;      /* Adjusted size for smaller screens */
+    height: 28px;     /* Adjusted size for smaller screens */
+    margin-right: 10px;
+  }
+
+  .icon-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-right: 100px;
+  }
+
+  .icon-container {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .notification-cards-2,
+  .card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .main-card .forward {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+    margin: -5px 0 20px 5px;
+  }
+
+  .D-icons-2 {
+    right: 5px;
+    margin-top: -50px;
+  }
+
+  .icon-2 {
+    font-size: 20px;  /* Adjusted size for smaller screens */
+    width: 20px;      /* Adjusted size for smaller screens */
+    height: 20px;     /* Adjusted size for smaller screens */
+    margin-right: 5px;
+  }
+
+  .icon-container {
+    width: 90%;
+    padding: 5px;
+  }
+
+  .card {
+    width: 95%;
+    font-size: 14px;
+  }
+}
+
+.notification-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #81e685; /* Green */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it appears above other elements */
+  transition: opacity 0.3s ease;
+}

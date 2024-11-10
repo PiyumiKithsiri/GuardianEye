@@ -1,0 +1,33 @@
+.alert-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .alert-container.success {
+    background-color: #28a745; /* Green for success */
+  }
+  
+  .alert-container.warning {
+    background-color: #dc3545; /* Red for warnings */
+  }
+  
+  .alert-container button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

@@ -1,0 +1,283 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container style */
+.right-bar3 {
+  margin-left: 288px;
+  flex-grow: 1;
+  
+  padding: 20px;
+  height: 100%;
+  margin-top: -12px;
+  margin-right: -10px;
+}
+
+/* Header styles */
+.hospital-header {
+  height: 120px;
+  margin-top: -55px;
+}
+
+.header-0-16 h1 {
+  margin-top: -15px;
+  margin-left: 30px;
+  font-size: 30px;
+  color: #000;
+}
+
+.header-0-16 {
+  width: 1060px;
+  height: 100px;
+  background: linear-gradient(90deg,#718bc7 100%, #757eb9 0% );
+  margin-top: 26px;
+  margin-left: -24px;
+  text-shadow: 2px 2px 4px rgba(224, 240, 246, 0.5);
+}
+
+.view-up-icon{
+  margin-top: 25px;
+  margin-left: -4px;
+}
+
+.view-up-icon h1{
+  color: white;
+  font-size: 42px;
+}
+
+.hr-line{
+  
+    border: 0;
+    border-top: 1px solid #000; /* Adjust color as needed */
+    margin: 10px 0; /* Adjust spacing above and below the line */
+    width: 100%; /* Adjust the width as per your layout */
+
+}
+
+/* Icons section */
+.D-icons-16 {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  margin-top: -4.2%;
+}
+
+.icon-13 {
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: linear-gradient(90deg, #b2c8f8 0%, #bccbfd 100%);
+  padding: 3px;
+  margin-right: 20px;
+  height: 25px;
+  width: 25px;
+  /* Adjusted margin for upward movement */
+  margin-top: -5px; /* Adjust this value as needed */
+}
+
+.icon-13:hover {
+  color: #115b6b;
+}
+
+.view-new{
+  margin-top: 60px;
+}
+
+/* Content styles */
+.icon-container {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.h2-3 {
+  margin-top: -80px;
+}
+
+.forward {
+  font-size: 50px;
+}
+
+.forward-button {
+  background-color: #4caf50; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.forward-button:hover {
+  background-color: #45a049; /* Hover effect */
+}
+
+/* Content section */
+.content1 {
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.icon-section1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+/* Icon container styles */
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: white;
+  margin-top: -1px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.icon-container:hover {
+  background-color: #eff2f3;
+  transform: scale(1.1);
+}
+
+.icon-container .icon {
+  margin-right: 10px;
+  color: rgb(247, 248, 249);
+  transition: color 0.3s ease;
+}
+
+.icon-container:hover .icon {
+  color: rgb(13, 13, 13);
+}
+
+.icon-container span {
+  color: rgb(252, 253, 254);
+  transition: color 0.3s ease;
+}
+
+.icon-container:hover span {
+  color: rgb(10, 11, 11);
+}
+
+/* Notification card styles */
+.notification-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.card-view {
+ background-color: #08aafc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: #212fee 5px 5px;
+  width: 300px;
+  max-width: 350px;
+  font-size: 16px;
+ 
+  position: relative; /* For positioning the forward button */
+ 
+}
+
+.card-view p {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Main box layout */
+.main-box {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+  width: 70%;
+ 
+}
+
+.h3-text{
+  font-size: 22px;
+  color: #2a3e52;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .right-bar3 {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .header-0-16 h1 {
+    margin-top: -50px;
+    margin-left: 30px;
+  }
+
+  .D-icons-16 {
+    margin-right: -20px;
+  }
+
+  .icon-13 {
+    margin-top: -50px;
+  }
+
+  .icon-section1 {
+    flex-direction: column; /* Stack icon containers vertically on smaller screens */
+  }
+
+  .icon-container {
+    width: 100%; /* Full width for icon containers */
+    margin-left: 0; /* Reset left margin */
+    margin-right: 0; /* Reset right margin */
+  }
+
+  .content1 {
+    font-size: 18px;
+  }
+
+  .card {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-bar3 {
+    margin-left: 0;
+    padding: 5px;
+  }
+
+  .D-icons-16 {
+    right: 5px;
+  }
+
+  .icon-container {
+    width: 100%;
+  }
+
+  .content1 {
+    font-size: 16px;
+  }
+
+  .card {
+    font-size: 10px;
+    max-width: 200px;
+  }
+}

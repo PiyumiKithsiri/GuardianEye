@@ -1,0 +1,144 @@
+import cv2
+import face_recognition
+import os
+import pygame  # For playing sounds
+import numpy as np
+import pymongo
+import requests  # For fetching images from URLs
+from io import BytesIO
+from PIL import Image
+
+# Initialize pygame mixer
+pygame.mixer.init()
+
+# MongoDB connection setup
+client = pymongo.MongoClient("mongodb://localhost:27017/")  # Replace with your MongoDB URI if needed
+db = client["eyedb"]  # Replace with your database name
+collection = db["missingpatients"]  # Replace with your collection name
+
+# Function to load images from URLs and return their face encodings
+def load_face_encodings_from_urls(image_urls):
+    encodings = []
+    for url in image_urls:
+        try:
+            response = requests.get(url)
+            # Check if the request was successful
+            if response.status_code == 200:
+                print(f"Content type of {url}: {response.headers['Content-Type']}")
+                img = Image.open(BytesIO(response.content))
+                img = np.array(img)  # Convert PIL image to numpy array
+                face_encodings = face_recognition.face_encodings(img)
+                if face_encodings:
+                    encodings.append(face_encodings[0])  # Assuming one face per image
+            else:
+                print(f"Failed to fetch image from {url}. Status code: {response.status_code}")
+        except Exception as e:
+            print(f"Error loading image from {url}: {e}")
+    return encodings
+
+
+# Fetch missing patients data from MongoDB
+def load_patients_from_db():
+    known_faces = {}
+    patients = collection.find({})
+    for patient in patients:
+        # Debugging: Print each document to inspect its structure
+        print(f"Document from MongoDB: {patient}")
+
+        # Ensure 'index' field exists
+        if "index" in patient and "imageUrls" in patient:
+            index = patient["index"]
+            image_urls = patient["imageUrls"]
+            known_faces[index] = load_face_encodings_from_urls(image_urls)
+        else:
+            print(f"Missing 'index' or 'imageUrls' in document: {patient}")
+    return known_faces
+
+# Load known faces from the database
+known_faces = load_patients_from_db()
+
+# Check MongoDB connection and print a success message
+print("Connected to MongoDB and loaded patient data.")
+
+# Open the webcam
+video_capture = cv2.VideoCapture(0)
+
+# Correct alert sound file path
+alert_sound_path = r"D:\face\alert_sound.mp3"  # Ensure sound file exists
+
+# Set a lower tolerance for higher precision
+TOLERANCE = 0.45
+
+while True:
+    ret, frame = video_capture.read()
+    rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    face_locations = face_recognition.face_locations(rgb_frame)
+
+    if face_locations:
+        frame_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
+
+        for face_encoding, (top, right, bottom, left) in zip(frame_encodings, face_locations):
+            name = "Unknown"
+            best_match_name = None
+            min_distance = float("inf")
+
+            # Iterate through each known person and compare
+            for person_index, encodings in known_faces.items():
+                face_distances = face_recognition.face_distance(encodings, face_encoding)
+                best_match_index = np.argmin(face_distances)  # Find the closest match
+                if face_distances[best_match_index] < min_distance:
+                    min_distance = face_distances[best_match_index]
+                    best_match_name = person_index
+
+            # If the best match distance is below the tolerance, we consider it a match
+            if min_distance < TOLERANCE:
+                name = best_match_name
+                # Play alert sound when identified correctly
+                pygame.mixer.music.load(alert_sound_path)
+                pygame.mixer.music.play()
+
+            # Display the name and confidence score
+            confidence_text = f"{name} ({round(1 - min_distance, 2) * 100}% confident)" if name != "Unknown" else name
+            cv2.putText(frame, confidence_text, (left + 6, bottom - 6), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+            
+            # Draw a rectangle around the face
+            cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
+
+    # Display the resulting frame
+    cv2.imshow("Video", frame)
+
+    # Press 'q' to quit
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# Release the webcam and close windows
+video_capture.release()
+cv2.destroyAllWindows()
+
+-----------------------------------------------------------------
+
+from flask import Flask, jsonify
+from flask_cors import CORS
+import subprocess
+import os
+
+app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
+
+@app.route('/run-recognition', methods=['POST'])
+def run_recognition():
+    try:
+        script_path = os.path.join(os.path.dirname(__file__), 'recognition.py')
+        if not os.path.isfile(script_path):
+            return jsonify({'message': 'Facial recognition script not found.', 'path': script_path}), 404
+        
+        result = subprocess.run(['python', script_path], capture_output=True, text=True)
+        if result.returncode == 0:
+            return jsonify({'message': 'Facial recognition started successfully!', 'output': result.stdout}), 200
+        else:
+            return jsonify({'message': 'Error in facial recognition script.', 'error': result.stderr}), 500
+    except Exception as e:
+        return jsonify({'message': 'Failed to run the recognition script.', 'error': str(e)}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)

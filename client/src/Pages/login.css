@@ -1,0 +1,128 @@
+.main-signin{
+    position: fixed;
+    background-image: url(../bg6.jpg);
+    width:1520px;
+    height: 739px;
+    margin-top: -18px;
+    margin-left: -83px;
+    
+}
+
+.password-container {
+    position: relative;
+  }
+  
+  .Password {
+    padding-right: 250px; /* Add space for the icon */
+  }
+  
+  .password-container .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #494848; /* Adjust color as needed */
+  }
+  
+  .eye-icon{
+    margin-right: 960px;
+  }
+
+.form{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    padding: 20px;
+    height: 280px;
+    
+    
+}
+
+.login-text{
+    font-size: 42px;
+    margin-top: -20%;
+    color: #000000;
+}
+
+.email, .Password {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Default border color */
+    font-size: 16px; /* Set font size */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Focus state for both inputs */
+.email:focus, .Password:focus {
+    border-color: #007BFF; /* Change to your preferred color */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional glow effect */
+}
+
+/* Placeholder styling (optional) */
+.email::placeholder, .Password::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+/* Add a background color and shadow */
+.email, .Password {
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effect */
+.email:hover, .Password:hover {
+    border-color: #0056b3; /* Darker border on hover */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+
+.form button{
+    margin-top: -5px;
+    margin-left: 20%;
+    padding: 10px;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid ;
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form p{
+    font-weight: bold;
+}
+
+.logo{
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 500px;
+    
+}
+
+.signin-signup{
+    
+    margin-top: 50px;
+    margin-left: 150px;
+    background-color:rgba(0, 0, 0, 0.144);
+    opacity: 0.5;
+    width: 500px;
+    border-radius: 20px;
+    border-color: black;
+    font-size: 20px;
+    border-style: ridge;
+    border-width: 2px;
+    
+}
+
+

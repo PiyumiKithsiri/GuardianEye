@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.right-bar-3 {
+  margin-left: 288px;
+  flex-grow: 1;
+  background-color: white;
+  padding: 20px;
+  height: 100%;
+  margin-top: -12px;
+  margin-right: -10px;
+}
+
+.hospital-header {
+  margin-top: -55px;
+}
+
+.header-0 h1 {
+  font-size: 30px;
+  color: #000;
+}
+.police-up-text h1 {
+  font-size: 42px;
+  color: #ffffff;
+  margin-top: -30px;
+
+}
+
+.h2-4{
+  text-transform: uppercase;
+}
+
+.header-0 {
+  margin-top: 60px;
+  margin-left: 40px;
+  text-shadow: 2px 2px 4px rgba(224, 240, 246, 0.5);
+}
+
+.police-hos{
+  width: 105.5%;
+  height: 100px;
+  background: linear-gradient(90deg,#718bc7 100%, #757eb9 0% );
+  margin-top: -30px;
+  margin-left: -3%;
+}
+
+.police-up-text{
+  margin-top: 15px;
+}
+
+.hr-01{
+  
+    border: 0;
+    border-top: 1px solid #000; /* Adjust color as needed */
+    margin: 10px 0; /* Adjust spacing above and below the line */
+    width: 100%; /* Adjust the width as per your layout */
+
+}
+
+.D-icons-3 {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+ margin-left: -100px;
+  margin-top: -5.5%;
+}
+
+.icon-3 {
+  font-size: 30px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    background: linear-gradient(30deg, #087178ac 0%, #095185cc 100%);
+    -webkit-box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+    -moz-box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+    box-shadow: -7px 5px 23px -4px rgba(0,0,0,0.67);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 3px;
+    transition: transform 0.3s ease;
+}
+
+.icon-3:hover{
+  color: #000000;
+  transform: scale(1.05);
+}
+
+.police-hos-icon{
+  margin-top: -10px;
+}
+
+.icon-2:hover {
+  color: #115b6b;
+}
+
+.icon-container {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.h2-3 {
+  margin-top: -80px;
+}
+
+.forward {
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.forward-button {
+  background-color: #4caf50; /* Change this to your desired color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.forward-button:hover {
+  background-color: #45a049; /* Darker shade for hover effect */
+}
+
+.content {
+  padding: 10px;
+  margin-top: 80px;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: white;
+  margin-top: -1px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.icon-container:hover {
+  background-color: #eff2f3;
+  transform: scale(1.1);
+}
+
+.icon-container .icon {
+  margin-right: 10px;
+  color: rgb(247, 248, 249);
+  transition: color 0.3s ease;
+}
+
+.icon-container:hover .icon {
+  color: rgb(13, 13, 13);
+}
+
+.icon-container span {
+  color: rgb(252, 253, 254);
+  transition: color 0.3s ease;
+}
+
+.icon-container:hover span {
+  color: rgb(10, 11, 11);
+}
+
+.notification-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.card-police {
+  background-color:  #08aafc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: #212fee 5px 5px;
+  width: 90%;
+  max-width: 300px;
+  font-size: 14px;
+  position: relative; /* For positioning the forward button */
+}
+
+.card-police p{
+  color: black;
+  font-size:16px;
+  margin-bottom: 5px;
+}
+
+.card h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.main-box {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+  .right-bar {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .D-icons-3 {
+    right: 10px;
+    margin-top: -65px;
+  }
+
+  .icon-container {
+    width: 45%;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .card {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-bar {
+    margin-left: 0;
+    padding: 5px;
+  }
+
+  .D-icons-3 {
+    right: 5px;
+  }
+
+  .icon-container {
+    width: 100%;
+  }
+
+  .content h2 {
+    font-size: 16px;
+  }
+
+  .card {
+    font-size: 10px;
+    max-width: 200px;
+  }
+}

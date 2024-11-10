@@ -1,0 +1,80 @@
+.icon-container_4 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    width: 240px;
+    height: 180px;
+    margin: 10px auto; /* Keeps centered */
+    text-align: center;
+    background: linear-gradient(30deg, #087876ac 0%, #095885cc 100%);
+    box-shadow: -7px 5px 23px -4px rgba(0, 0, 0, 0.67), 0 80px 60px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    transition: transform 0.3s ease;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.icon-container_4:hover {
+    transform: scale(1.05);
+}
+
+.icon10 {
+    font-size: 40px; /* Increased icon size */
+    margin-bottom: 120px; /* Adjusted for better alignment */
+    color: white;
+}
+
+.icon10:hover {
+    color: black;
+}
+
+.text-13 {
+    color: white;
+    font-size: 18px;
+    margin-top: 120px; /* Adjusted for new icon size */
+    margin-left: -10px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .icon-container_4 {
+        width: 50%;
+        height: 80px;
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1%;
+        margin-left: 45%;
+    }
+
+    .icon10 {
+      font-size: 40px; /* Responsive icon size */
+      margin-top: 10px;
+      margin-left: -150px;
+    }
+
+    .text-13 {
+      font-size: 20px;
+      margin-top: 0;
+      margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-container_4 {
+      width: 100%;
+      margin: 5px auto; 
+    }
+
+    .icon10 {
+      font-size: 35px; 
+    }
+
+    .text-13 {
+      font-size: 14px;
+    }
+}

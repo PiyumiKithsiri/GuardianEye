@@ -1,0 +1,671 @@
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background-color: #006666;
+}
+
+.sidebar li{
+    height: 50px;
+    
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+   font-size: 20px;
+}
+
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+    color: black;
+ }
+
+
+.img{
+    width: 220px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.sidebar .search-box{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-p{
+  color: white;
+  font-size: 17px;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+
+
+.sidebar li a{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+
+#dash{
+    color: white;
+}
+
+.sidebar li a:hover{
+    background-color: #669999;
+}
+
+
+
+/*Right Bar*/
+
+.container-mission{
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 83%;
+    margin-left: 300px;
+    background-color: white;
+}
+
+.container-mission .header{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80.5vw;
+    height: 100px;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1px;
+}
+
+ .nav{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    justify-content: space-between;
+    
+}
+
+.container-mission .header .nav .search{
+    flex: 3;
+    margin-left: 50px;
+    
+   
+}
+
+.search h1{
+  margin-top: -15px;
+}
+
+.container-mission .header .nav .search input[type=text]{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(215, 220, 223);
+    padding: 10px;
+    width: 50%;
+    
+    
+}
+
+
+/*icon one*/
+
+.mission-icons-up{
+  margin-top: 85px;
+}
+
+.container-mission .header .nav .user{
+    flex: 0.3;
+   
+}
+
+.miss-btn{
+    width: 100.5%;
+    height: 70%;
+    display: inline-flex;
+    margin-top: 50px;
+    margin-left: -90px;
+}
+
+.btn{
+    
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    text-align: center;
+    
+}
+
+.mailbox{
+    
+    height: 30px;
+    width: 30px;
+}
+
+/*icon two*/
+
+.container-mission .header .nav .user1{
+    flex: 0.8;
+   
+}
+
+.btn1{
+    
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    text-align: center;
+    
+}
+
+.bell{
+    height: 30px;
+    width: 30px;
+    
+}  
+
+.table-missing{
+    width: 90%;
+    margin-left: 80px;
+}
+
+
+/*nexe*/
+
+.container-mission .content{
+    position: relative;
+    margin-right: 10vh;
+    margin-top:20vh;
+    min-height: 90vh;
+}
+
+.container-mission .content .cards{
+    padding: 20px 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card1{
+    width: 250px;
+    height:60px;
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background:linear-gradient(90deg, #4e6ca9 0%, #2d6378 100%);
+    margin-left: 290px;
+    border-radius: 10px;
+    transition: background 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+
+.card2{
+    width: 250px;
+    height:60px;
+    background:linear-gradient(90deg, #4e6ca9 0%, #2d6378 100%);
+   margin-top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 800px;
+    border-radius: 10px;
+   color: white;
+}
+
+
+.cards a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+ .card1:hover{
+    background-color: rgb(2, 109, 171);
+    transform: scale(1.10);
+}
+ .card2:hover{
+    background-color: rgb(2, 109, 171);
+    transform: scale(1.10);
+}
+.container-mission .content .cards .card3:hover{
+    background-color: rgb(2, 109, 171);
+}
+
+
+
+.container-mission .content .cards .card8{
+    width: 150px;
+    height:60px;
+    background-color: rgb(159, 255, 95);
+    /*margin: 20px 10px;*/
+    /*margin-top: -80px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*margin-left: 200px;*/
+    border-radius: 10px;
+    /*margin-top: -30px;*/
+
+}
+
+.icon-dash{
+   
+    font-size: 30px;
+    margin-left: -20px;
+    margin-top: 15px;
+    color: white;
+}
+
+.icon-dash:hover{
+  transform: scale(1.05);
+    color: black;
+}
+
+.first-two{
+   font-size: 15px;
+   margin-left: 60px;
+   text-decoration: none;
+   list-style: none;
+   color: white;
+}
+
+.first-two:hover{
+  color:black
+}
+
+.paragraph-add{
+    font-size: 15px;
+   font-weight: bold;
+   margin-left: 50px;
+   text-decoration: none;
+   list-style: none;
+   
+}
+ 
+
+.mssing-list .patient-details li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+
+  .content-mission{
+    margin-left: -80px;
+    margin-top: -100px;
+  }
+
+
+
+
+
+  /* Table styles */
+
+  /*
+.patients-table-wrapper {
+  margin: 20px;
+}
+
+.patients-table-container {
+  max-height: 400px; 
+  overflow-y: auto; 
+  margin-top: 20px;
+  margin-left: 25px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.patients-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 150px;
+}
+
+.patients-table th,
+.patients-table td {
+  padding: 12px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+.patients-table th {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3); 
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid #00c6ff;
+  font-size: 16px;
+}
+
+.patients-table td {
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  font-size: 14px;
+}
+
+.patients-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.icon-trash{
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+  border-color: #000;
+  margin-left: 35%;
+}
+  
+*/
+  @media (max-width: 768px) {
+    .container-mission{
+        margin-left: 1px;
+        width: 420px;
+    }
+
+   
+
+    .cards{
+        margin-left: 250px;
+    }
+
+   /**/
+   .mission-bottom ul li{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: -30px;
+   }
+
+  
+  }
+
+  
+/*table up*/
+
+/* Variables for alert-focused theme */
+:root {
+    --hospital-primary: #0a0a0a;    
+    --hospital-secondary: rgb(221, 230, 235);  
+    --hospital-light: #95c1db;     
+    --hospital-hover: #eef4f5;     
+    --hospital-border: #bee3f8;    
+    --hospital-error: #f56565;     
+    --hospital-text: #000000;      
+    --hospital-text-light: #0a0a0a; 
+  }
+  
+  /* Container styles */
+  .pati-table {
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(43, 108, 176, 0.1);
+    overflow-x: auto;
+    margin: 1rem;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    padding: 1rem;
+    background-color: #fff5f5;
+    border-left: 4px solid var(--hospital-error);
+    color: #c53030;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Table base styles */
+  .patients-table-miss {
+    width: 85%;
+    margin-left: 90px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  /* Header styles */
+  .patients-table-miss thead {
+    background-color: var(--hospital-light);
+  }
+  
+  .patients-table-miss th {
+    padding: 1.25rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--hospital-primary);
+    border-bottom: 2px solid var(--hospital-border);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    position: relative;
+    border-radius: 5px;
+    border: #000000;
+    box-shadow: 3px 3px #167ef5;
+  }
+  
+  .patients-table-miss th::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--hospital-primary);
+    transition: width 0.3s ease;
+  }
+  
+  .patients-table-miss th:hover::after {
+    width: 100%;
+  }
+  
+  /* Table body styles */
+  .patients-table-miss tbody tr {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .patients-table-miss tbody tr:hover {
+    background-color: var(--hospital-hover);
+    transform: translateY(-1px);
+  }
+  
+  .patients-table-miss tbody td {
+    padding: 1.25rem 1rem;
+    color: var(--hospital-text-light);
+    border-bottom: 1px solid var(--hospital-border);
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+  /* Special styling for date and time cells */
+  .patients-table-miss td:nth-child(6),
+  .patients-table-miss td:nth-child(7) {
+    color: #e53e3e;
+    font-weight: 500;
+  }
+  
+  /* Alternating row colors */
+  .patients-table-miss tbody tr:nth-child(even) {
+    background-color: #fafcff;
+  }
+  
+  /* Delete icon styles */
+  .icon-trash-miss {
+    color: var(--hospital-error);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: rgb(212, 53, 53);
+    font-size: 20px;
+  }
+  
+  .icon-trash-miss:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
+  /* Status indicators */
+  .status-pill {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .status-missing {
+    background-color: #fed7d7;
+    color: #822727;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .pati-table {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 8px;
+    }
+    
+    .patients-table-miss thead {
+      display: none;
+    }
+    
+    .patients-table-miss tbody tr {
+      display: block;
+      margin-bottom: 1rem;
+      border: 1px solid var(--hospital-border);
+      border-radius: 8px;
+      background-color: white;
+    }
+    
+    .patients-table-miss tbody td {
+      display: block;
+      text-align: right;
+      padding: 0.75rem 1rem;
+      position: relative;
+    }
+    
+    .patients-table-miss tbody td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: 600;
+      color: var(--hospital-primary);
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+    
+    .patients-table-miss tbody td:last-child {
+      border-bottom: none;
+    }
+  
+    /* Special mobile styling for date and time */
+    .patients-table-miss td:nth-child(6),
+    .patients-table-miss td:nth-child(7) {
+      background-color: #fff5f5;
+      font-weight: 600;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulseHighlight {
+    0% {
+      background-color: var(--hospital-hover);
+    }
+    50% {
+      background-color: var(--hospital-light);
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  /* Animation classes */
+  .patients-table-miss tbody tr {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .row-highlight {
+    animation: pulseHighlight 1.5s ease-in-out;
+  }
+  
+  /* Print styles */
+  @media print {
+    .pati-table {
+      box-shadow: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .icon-trash {
+      display: none;
+    }
+    
+    .patients-table-miss th,
+    .patients-table-miss td {
+      padding: 0.5rem;
+    }
+    
+    .patients-table-miss {
+      border: 1px solid #e2e8f0;
+    }
+  }
+  
+  
+
+
+
+
+
